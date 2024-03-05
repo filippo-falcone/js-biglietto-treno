@@ -11,10 +11,10 @@ document.getElementById('age').innerHTML = userAgePrint;
 // Definire il prezzo del bigletto
 let ticketPrice;
 if (userAge < 18) {
-    ticketPrice = 0.21 * userKm * 20 / 100;
+    ticketPrice = 0.21 * userKm * (100 - 20) / 100;
 }
 else if (userAge > 65) {
-    ticketPrice = 0.21 * userKm * 40 / 100;
+    ticketPrice = 0.21 * userKm * (100 - 40) / 100;
 }
 else {
     ticketPrice = 0.21 * userKm;
