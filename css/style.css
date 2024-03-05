@@ -3,4 +3,8 @@ body {
     height: 100dvh;
 }
 
+main {
+    height: calc(100% - var(--altezza-header));
+}
+
 /* #endregion */
