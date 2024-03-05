@@ -9,15 +9,16 @@ const userAgePrint = 'età ' + userAge;
 document.getElementById('age').innerHTML = userAgePrint;
 
 // Definire il prezzo del bigletto
+const priceForKm = 0.21
 let ticketPrice;
 if (userAge < 18) {
-    ticketPrice = 0.21 * userKm * (100 - 20) / 100;
+    ticketPrice = priceForKm * userKm * (100 - 20) / 100;
 }
 else if (userAge > 65) {
-    ticketPrice = 0.21 * userKm * (100 - 40) / 100;
+    ticketPrice = priceForKm * userKm * (100 - 40) / 100;
 }
 else {
-    ticketPrice = 0.21 * userKm;
+    ticketPrice = priceForKm * userKm;
 }
 
 // Stampare al cliente il prezzo
